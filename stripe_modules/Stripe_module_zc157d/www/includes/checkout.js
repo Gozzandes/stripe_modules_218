@@ -36,7 +36,6 @@ async function handleSubmit(e) {
   const response = await stripe.confirmPayment({
     elements,
     confirmParams: {
-      return_url: confirmationURL,
      },
     redirect: 'if_required'
    }
